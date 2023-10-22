@@ -1,0 +1,9 @@
+---
+- name: run masterscript
+  hosts: all
+  become: true
+  become_method: sudo
+
+  tasks:
+  - name: execute masterscript
+    ansible.builtin.script: /etc/ansible/masterscript.sh
