@@ -16,6 +16,8 @@
  This should initialise the VMs and clone the laravel app from https://github.com/laravel/laravel
 
  The app should now be running on *192.168.56.20*
+ ![image](https://github.com/akpu-jo/semester-2-exam/assets/63398509/52d9fc28-04d1-4338-b40c-10e591372035)
+
 
  ## Slave setup
  To access the slave machine run
@@ -43,6 +45,8 @@
  ```ansible-playbook uptime.yml -i inventory```
 
  This should activate the cronjob for checking uptime every 12 hours. the output of the checks are recoreded in a file; uptime.log which can be found in the vagrant folder.
+ ![image](https://github.com/akpu-jo/semester-2-exam/assets/63398509/b30e0a2d-058a-4afc-84f1-a3312b605099)
+
 
  ### Running the Masterscript
  From the slave node it is possible to run the masterscript.sh which will setup the LAMP server and clone the github repository NB: this step is done automatically when the project was innitialized
